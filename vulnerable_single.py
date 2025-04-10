@@ -7,7 +7,6 @@ balance = 0
 
 @app.post("/increment")
 def increment():
-    # Read-modify-write is NOT atomic
     global balance
     global used
     isUsed = used
